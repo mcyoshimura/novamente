@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div {
+        height: 50px;
+        background-color: #ccc;
+        border: 1px solid #222;
+        padding: 10px;
+    }
+
+    /*Relative*/
+
+    .relative {
+        background-color: #321;
+        position: relative;
+        color: #fff;
+    }
+
+    .relative-alterada {
+        top: 20px;
+        left: 20px;
+        }
+
+    /*Absolute*/
+        .absolute {
+            height: 25px;
+            width: 70px;
+            background-color: #914;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+/*Fixed*/
+
+        html {
+            padding-bottom: 1000px;
+        }
+
+        .fixed {
+            width: 50px;
+            height: 50px;
+            background-color: #528;
+            position: fixed;
+            top: 10px;
+            left: 100px;
+        }
+
+.sticky {
+    height: 50px;
+    width: 100px;
+    top: 10px;
+    background-color: #881;
+    position: sticky;
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <div>Static</div>
+    <div class="sticky">Sticky</div>
+    <div>Static</div>
+    <div class="relative relative-alterada">Static
+       
+        <div class="absolute">Absolute</div>
+    </div>
+    <div>Static</div>
+    <div>Static</div>
+    <p>Parágrafo</p>
+    <div class="sticky">Sticky</div>
+    <!--Relative-->
+        <div class="relative">
+            Relative
+            <div class="absolute">Absolute</div>
+        </div>
+
+       
+            <div class="absolute">Absolute</div>
+       
+
+    <!--Absolute-->
+    <div class="absolute">Absolute</div>
+
+    <!--Fixed-->
+
+    <div class="fixed">
+        Fixed
+    </div>
+    
+</body>
+</html>
